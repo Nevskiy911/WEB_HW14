@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "fast2"
+version = "0.1.0"
+description = ""
+authors = ["Oleksandr Malieiev <maleev1820@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.101.0"}
+alembic = "^1.11.2"
+sqlalchemy = "^2.0.19"
+asyncpg = "^0.28.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+httpx = "^0.24.1"
+aiosqlite = "^0.19.0"
+pytest-asyncio = "^0.21.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+pythonpath = "."

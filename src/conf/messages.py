@@ -1,0 +1,7 @@
+INVALID_SCOPE_TOKEN = "Invalid scope for token"
+ACCOUNT_EXISTS = "Account already exists"
+INVALID_EMAIL = "Invalid email"
+EMAIL_NOT_CONFIRMED = "Email not confirmed"
+INVALID_PASS = "Invalid password"
+INVALID_REFRESH_TOKEN = "Invalid refresh token"
+VERIFICATION_ERR = "Verification error"
